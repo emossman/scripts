@@ -1,0 +1,19 @@
+# Alai
+# Useful alai from around the internet, and a few of my own.
+
+# ls
+# enable the long output, human-readable, filetype denoter, and colorized output flags.
+alias ls='ls -lhFG'
+
+# star-wars
+# star-wars will connect you to a telnet server that plays Star Wars: A New Hope, in glorious textual output. IPv6 is supported for better colors.
+alias star-wars='telnet towel.blinkenlights.nl'
+
+# horse
+# horse will query a lorem ipsum generator and pipe the output to say. Volume best kept to maximum.
+alias horse='curl -s horseebooksipsum.com/api/v1/ | say'
+
+# space
+# space uses the disk usage utility to recursively list the sizes of all files and directories, in kilobytes, in the current working directory. space then pipes that stream into sort which outputs the list of files and directories in ascending order.
+# I would like to be able to pass an argument into the disk usage utility.
+alias space='du -hak | sort -n'
